@@ -1,6 +1,6 @@
 Aqui está um exemplo de arquivo README para um projeto ASP.NET Core com duas soluções:
 
-# Nome do Projeto
+# Projeto de Estudo sobre APIS, Identity e Models.
 
 Este projeto contém duas soluções: **WebApiDog** e **AspNetCore**. Ambas as soluções estão desenvolvidas em ASP.NET Core.
 
