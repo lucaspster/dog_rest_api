@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entrevista", "Entrevista.csproj", "{BB7C567B-F9FD-440A-A919-4C771C69C59A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiProdutos", "..\WebApiProdutos\WebApiProdutos.csproj", "{BCD41B91-E47F-4717-A80E-74729AD9D782}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiDog", "..\WebApiDog\WebApiDog.csproj", "{BCD41B91-E47F-4717-A80E-74729AD9D782}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
