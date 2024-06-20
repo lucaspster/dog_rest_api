@@ -1,0 +1,59 @@
+﻿@page
+@model Entrevista.Pages.Produto.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Produtos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Produtos.Nome" class="control-label"></label>
+                <input asp-for="Produtos.Nome" class="form-control" />
+                <span asp-validation-for="Produtos.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Produtos.Descricao" class="control-label"></label>
+                <input asp-for="Produtos.Descricao" class="form-control" />
+                <span asp-validation-for="Produtos.Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Produtos.Preco" class="control-label"></label>
+                <input asp-for="Produtos.Preco" class="form-control" />
+                <span asp-validation-for="Produtos.Preco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Produtos.DataCriacao" class="control-label"></label>
+                <input asp-for="Produtos.DataCriacao" class="form-control" />
+                <span asp-validation-for="Produtos.DataCriacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Produtos.QuantidadeEstoque" class="control-label"></label>
+                <input asp-for="Produtos.QuantidadeEstoque" class="form-control" />
+                <span asp-validation-for="Produtos.QuantidadeEstoque" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Produtos.CategoriaId" class="control-label"></label>
+                <input asp-for="Produtos.CategoriaId" class="form-control" />
+                <span asp-validation-for="Produtos.CategoriaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

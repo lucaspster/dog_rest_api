@@ -1,0 +1,55 @@
+﻿@page
+@model Entrevista.Pages.Produto.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Produtos</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produtos.Nome)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produtos.Nome)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produtos.Descricao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produtos.Descricao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produtos.Preco)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produtos.Preco)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produtos.DataCriacao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produtos.DataCriacao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produtos.QuantidadeEstoque)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produtos.QuantidadeEstoque)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Produtos.CategoriaId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Produtos.CategoriaId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Produtos.ProdutoId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

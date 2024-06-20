@@ -1,0 +1,6 @@
+@WebApiDog_HostAddress = http://localhost:5251
+
+GET {{WebApiDog_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
